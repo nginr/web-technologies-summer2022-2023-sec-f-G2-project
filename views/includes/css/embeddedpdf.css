@@ -1,0 +1,7 @@
+.pdfcontrols {
+    margin: 3px;
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

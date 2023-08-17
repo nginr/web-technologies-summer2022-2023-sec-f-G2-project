@@ -1,0 +1,142 @@
+/* Home page */
+#home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.libwrapper {
+    max-width: 55%;
+    max-height: 50%;
+    margin-top: 26px;
+    margin-bottom: 35px;
+    padding: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px #777;
+    box-shadow: 0px 0px 10px 1px #777;
+
+    display: flex;
+    overflow-x: auto;
+    background-color: #fefefe;
+}
+
+.libwrapper::~webkit-scrollbar {
+    width: 1px;
+}
+
+.libwrapper .libcard {
+    min-width: 300px;
+    max-height: 220px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ddd;
+
+    box-shadow: 1px 3px 5px #aaa;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 1px #999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.libcard-image {
+    max-width: 100px;
+    height: 100px;
+}
+
+.libcard-content {
+    color: #11101b;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+}
+
+.libcard-content .libcard-description {
+    color: #666;
+    text-align: start;
+}
+
+
+/* ///////////////////// Team */
+
+
+.teamwrapper {
+    max-width: 55%;
+    max-height: 50%;
+    margin-top: 5px;
+    padding: 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px #777;
+
+    display: flex;
+    overflow-x: auto;
+    background-color: #fefefe;
+}
+
+.teamwrapper::~webkit-scrollbar {
+    width: 1px;
+}
+
+.teamwrapper .membercard {
+    min-width: 300px;
+    max-height: 220px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ddd;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 3px 5px #aaa;
+    box-shadow: 0px 0px 8px 1px #999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.membercard-image {
+    display: relative;
+    width: 100px;
+    height: 100px;
+
+    margin: 5px;
+    padding: 5px;
+}
+
+.membercard-content {
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.membercard-content b {
+    color: #000;
+    text-align: center;
+}
+.membercard-content i {
+    color: #555;
+}
+.membercard-content p {
+    text-align: start;
+    color: #666;
+}

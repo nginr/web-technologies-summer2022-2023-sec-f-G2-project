@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="../includes/css/member_details.css">
+
+<div class="profile-wrapper">
+    <form class="member-form" method="POST" enctype="multipart/form-data" action="../controllers/team.controller.php">
+
+
+        <div class="profile-box">
+            <img src="" alt="">
+        </div>
+
+
+        <div class="form-group">
+            <label for="membername">Name</label>
+            <input type="text" id="membername" name="membername" required>
+        </div>
+        <div class="form-group">
+            <label for="profpic">Profile Picture</label>
+            <input type="file" id="profpic" name="profpic" accept="image/*">
+        </div>
+        <div class="form-group">
+            <label for="mpos">Position</label>
+            <select id="mpos" name="mpos" required>
+                <option value="" disabled selected>Select a Position</option>
+                <option value="CEO">CEO</option>
+                <option value="Manager">Manager</option>
+                <option value="Vice-Manager">Vice-Manager</option>
+                <option value="Member">Member</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="qualification">Qualification</label>
+            <input type="text" id="qualification" name="qualification" required>
+        </div>
+        <div class="form-group">
+            <label for="about">About</label>
+            <textarea id="about" name="about" rows="4"></textarea>
+        </div>
+        <div class="form-buttons">
+            <button type="submit">Update</button>
+            <button>Delete</button>
+        </div>
+    </form>
+    <a href="../views/team.admin.view.php" class="cancel-link">Cancel</a>
+</div>

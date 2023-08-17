@@ -1,0 +1,27 @@
+.userlist {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-wrapper {
+    width: 700px;
+}
+
+tbody tr td img {
+    width: 100px;
+    height: 100px;
+}
+
+table tbody tr td label {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.1s;
+}
+
+table tbody tr td:hover label {
+    font-weight: 540;
+    color: #11101b;
+}
